@@ -4,13 +4,13 @@
 
 | Nama          | Student ID | Path              | LinkedIn                                      |
 |---------------|------------|-------------------|-----------------------------------------------|
-| Dwi Andhara Valkyrie      | M497D4KX3132  | Machine Learning  | [https://www.linkedin.com/in/dwi-andhara-valkyrie/](https://www.linkedin.com/in/dwi-andhara-valkyrie/) |
-| Priskila Christine Natalia Parapat    | M114D4KX2213  | Machine Learning| [linkedin.com/in/janesmith](https://linkedin.com/in/janesmith) |
-| Tubagus Aldi Maulana Yusuf    | M288D4KY2835  | Machine Learning| [linkedin.com/in/janesmith](https://linkedin.com/in/janesmith) |
-| Bagus Triyudanto    | C116D4KY0582  | Cloud Computing| [linkedin.com/in/janesmith](https://linkedin.com/in/janesmith) |
-| Firlan Syah    |  C288D4KY1151  | Cloud Computing| [https://www.linkedin.com/in/firlan-syah](https://www.linkedin.com/in/firlan-syah) |
-| Alvito Reyhan Nugroho    | A009D4KY3464  | Mobile Development| [linkedin.com/in/janesmith](https://linkedin.com/in/janesmith) |
-| Machfud Ichsan Khoirudin    | A121D4KY3668  | Mobile Development| [linkedin.com/in/janesmith](https://linkedin.com/in/janesmith) |
+| Dwi Andhara Valkyrie      | M497D4KX3132  | Machine Learning  | [Dhara](https://www.linkedin.com/in/dwi-andhara-valkyrie/) |
+| Priskila Christine Natalia Parapat    | M114D4KX2213  | Machine Learning| [Priskila](https://www.linkedin.com/in/priskilaparapat/) |
+| Tubagus Aldi Maulana Yusuf    | M288D4KY2835  | Machine Learning| [Tubagus Aldi](http://www.linkedin.com/in/tubagusaldi) |
+| Bagus Triyudanto    | C116D4KY0582  | Cloud Computing| [Bagus](https://www.linkedin.com/in/bagus-triyudanto-83a92b2a6/) |
+| Firlan Syah    |  C288D4KY1151  | Cloud Computing| [Firlan Syah](https://www.linkedin.com/in/firlan-syah) |
+| Alvito Reyhan Nugroho    | A009D4KY3464  | Mobile Development| [Alvito Reyhan N](https://www.linkedin.com/in/alvito-reyhan-nugroho-b36a62229/) |
+| Machfud Ichsan Khoirudin    | A121D4KY3668  | Mobile Development| [Machfud Ichsan K](http://www.linkedin.com/in/machfudichsan) |
 
 
   ## About The Project
