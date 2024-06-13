@@ -1,0 +1,1 @@
+{0: 'Andaliman', 1: 'Cengkeh', 2: 'Daun Salam', 3: 'Jahe', 4: 'Kemiri', 5: 'Kencur', 6: 'Ketumbar', 7: 'Lengkuas', 8: 'daunjeruk', 9: 'kayumanis', 10: 'kunyit', 11: 'pala'}
