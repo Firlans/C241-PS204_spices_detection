@@ -23,6 +23,11 @@ Indonesia's rempah-rempah (spices) are the fragrant foundation of its world-reno
 Current methods of identifying rempah-rempah often rely on visual inspection, leading to misidentification and missed culinary opportunities. Inaccurate spice use can result in unintended flavors or even health risks.We propose a mobile app that leverages machine learning for object detection. Users simply point their smartphone camera at an unknown spice, and the app reveals its identity.  Following identification, the app unlocks a treasure trove of information, including origin, properties, health benefits, and traditional Indonesian culinary uses. To further inspire exploration, the app offers curated recipes featuring the identified spice.
 
 <!-- display 1, 2, 3 -->
-![Image 1](./display-1.png)
-![Image 2](./display-2.png)
-![Image 3](./display-3.png)
+<!-- TODO: Display images 1, 2, 3 here -->
+<table>
+  <tr>
+    <td><img src="./display-1.png" alt="Image 1" width="300"></td>
+    <td><img src="./display-2.png" alt="Image 2" width="300"></td>
+    <td><img src="./display-3.png" alt="Image 3" width="300"></td>
+  </tr>
+</table>
