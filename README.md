@@ -16,7 +16,7 @@
   ## About The Project
 <!-- logo -->
 <p align="center">
-  ![Spiciefy Logo](./spiciefy-logo.png)
+  <img src="./spiciefy-logo.png" alt="Spiciefy Logo">
 </p>
 Indonesia's rempah-rempah (spices) are the fragrant foundation of its world-renowned cuisine. As of May 2024, the nation's spice exports have reached a remarkable US$1.4 billion, a significant 12.5% increase compared to the previous year. This fragrant journey through time showcases Indonesia's enduring role as a key player in the global spice trade.Yet, identifying these spices can be a challenge due to their similar appearances. This confusion can limit exploration and appreciation of this rich culinary heritage.
 
