@@ -25,6 +25,11 @@ Current methods of identifying rempah-rempah often rely on visual inspection, le
 <!-- display 1, 2, 3 -->
 <!-- TODO: Display images 1, 2, 3 here -->
 <table>
+<tr>
+    <td><p align="center">Starting</p></td>
+    <td><p align="center">Dashboard</p></td>
+    <td><p align="center">User Login & Register</p></td>
+  </tr>
   <tr>
     <td><img src="./display-1.png" alt="Image 1" width="300"></td>
     <td><img src="./display-2.png" alt="Image 2" width="300"></td>
