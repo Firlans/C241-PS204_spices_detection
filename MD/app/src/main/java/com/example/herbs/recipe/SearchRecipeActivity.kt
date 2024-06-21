@@ -2,7 +2,6 @@ package com.example.herbs.recipe
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.SearchView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -60,7 +59,7 @@ class SearchRecipeActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<ResepResponse>, t: Throwable) {
-                Log.d("Error:", t.stackTraceToString())
+               //
             }
         })
     }
@@ -75,7 +74,7 @@ class SearchRecipeActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<ResepResponse>, t: Throwable) {
-                Log.d("Error:", t.stackTraceToString())
+               //
             }
         })
     }

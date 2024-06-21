@@ -49,7 +49,7 @@ class AddRecipeFragment : Fragment() {
 
         binding.btnAddPhoto.setOnClickListener {
             val galleryIntent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI).apply {
-                type = "image/*" // Restrict to images only
+                type = "image/*"
                 putExtra(Intent.EXTRA_MIME_TYPES, arrayOf("image/jpeg", "image/png", "image/gif")) // You can add more image types if needed
             }
             galleryLauncher.launch(galleryIntent)
@@ -99,15 +99,6 @@ class AddRecipeFragment : Fragment() {
                 val requestFile = RequestBody.create(mimeType.toMediaTypeOrNull(), file)
                 val body = MultipartBody.Part.createFormData("image", file.name, requestFile)
 
-                // Log for verification
-                println("AddRecipeFragment: name: $name")
-                println("AddRecipeFragment: region: $region")
-                println("AddRecipeFragment: ingredients: $ingredients")
-                println("AddRecipeFragment: author: $author")
-                println("AddRecipeFragment: description: $description")
-                println("AddRecipeFragment: steps: $steps")
-                println("AddRecipeFragment: image path: ${file.absolutePath}")
-
                 // Send request to API
                 apiService.uploadRecipe(
                     name,
@@ -142,7 +133,7 @@ class AddRecipeFragment : Fragment() {
                     }
 
                     override fun onFailure(call: Call<UploadResepResponse>, t: Throwable) {
-                        Toast.makeText(context, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(context, "Error", Toast.LENGTH_SHORT).show()
                         println("AddRecipeFragment: Failure: ${t.message}")
                     }
                 })

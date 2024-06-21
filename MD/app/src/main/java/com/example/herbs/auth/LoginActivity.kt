@@ -5,7 +5,6 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.herbs.databinding.ActivityLoginBinding
@@ -53,19 +52,18 @@ class LoginActivity : AppCompatActivity() {
                     val authResponse = response.body()
                     if (authResponse != null && authResponse.status == "success") {
                         val token = authResponse.token
-                        sessionManager.saveAuthToken(token) // Simpan token menggunakan session manager
+                        sessionManager.saveAuthToken(token)
                         navigateToMain()
                     } else {
-                        Toast.makeText(this@LoginActivity, "Login failed: ${authResponse?.message}", Toast.LENGTH_SHORT).show()
+                        //
                     }
                 } else {
-                    Toast.makeText(this@LoginActivity, "Login failed: ${response.message()}", Toast.LENGTH_SHORT).show()
+                    //
                 }
             }
 
             override fun onFailure(call: Call<AuthResponse>, t: Throwable) {
-                Log.e("LoginActivity", "Network error: ${t.message}", t)
-                Toast.makeText(this@LoginActivity, "Network error: ${t.message}", Toast.LENGTH_LONG).show()
+                //
             }
         })
     }
