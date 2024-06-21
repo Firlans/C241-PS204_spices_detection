@@ -30,7 +30,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         } else {
-            // Jika token ada dan status login ada, set fragment home sebagai fragment awal
             setCurrentFragment(HomeFragment())
         }
 

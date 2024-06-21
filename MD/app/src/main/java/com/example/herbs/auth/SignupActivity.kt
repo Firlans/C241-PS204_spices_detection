@@ -5,7 +5,6 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.text.TextUtils
-import android.util.Log
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
@@ -42,14 +41,7 @@ class SignupActivity : AppCompatActivity() {
         binding.btnSignUp.setOnClickListener {
             if (validateInput()) {
                 registerUser()
-                // Handle sign up button click
-                // Here you would handle the form submission, e.g., making a network request
-//            val intent = Intent(this, WelcomeActivity::class.java)
-//            startActivity(intent)
-                //hapuss
-            }else{
-                showSuccessPopup()
-            }
+             }
         }
 
         binding.btnBack.setOnClickListener {
@@ -141,11 +133,8 @@ class SignupActivity : AppCompatActivity() {
             }
         }
 
-        // Get the file from selectedImageUri
         val file = File(filePath)
-        // Create RequestBody for file
         val requestFile = RequestBody.create("image/*".toMediaTypeOrNull(), file)
-        // Create MultipartBody.Part for the file
         val avatar = MultipartBody.Part.createFormData("avatar", file.name, requestFile)
 
         val name = binding.etUsername.text.toString().trim()
@@ -163,8 +152,7 @@ class SignupActivity : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<AuthResponse>, t: Throwable) {
-                Log.e("SignupActivity", "Network error: ${t.message}", t)
-                Toast.makeText(this@SignupActivity, "Network error: ${t.message}", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@SignupActivity, "Network error: ", Toast.LENGTH_LONG).show()
             }
         })
     }

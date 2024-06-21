@@ -92,15 +92,6 @@ class AddRecipeActivity : AppCompatActivity() {
             val requestFile = RequestBody.create(contentResolver.getType(imageUri)?.toMediaTypeOrNull(), file)
             val body = MultipartBody.Part.createFormData("image", file.name, requestFile)
 
-            // Log for verification
-            Log.d("AddRecipeActivity", "name: $name")
-            Log.d("AddRecipeActivity", "region: $region")
-            Log.d("AddRecipeActivity", "ingredients: $ingredients")
-            Log.d("AddRecipeActivity", "author: $author")
-            Log.d("AddRecipeActivity", "description: $description")
-            Log.d("AddRecipeActivity", "steps: $steps")
-            Log.d("AddRecipeActivity", "image path: ${file.absolutePath}")
-
             // Send request to API
             apiService.uploadRecipe(
                 name,
@@ -130,13 +121,10 @@ class AddRecipeActivity : AppCompatActivity() {
                         startActivity(intent)
                     } else {
                         Toast.makeText(this@AddRecipeActivity, "Failed to upload recipe", Toast.LENGTH_SHORT).show()
-                        Log.e("AddRecipeActivity", "Response: ${response.errorBody()?.string()}")
                     }
                 }
-
                 override fun onFailure(call: Call<UploadResepResponse>, t: Throwable) {
-                    Toast.makeText(this@AddRecipeActivity, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
-                    Log.e("AddRecipeActivity", "Failure: ${t.message}")
+                    Toast.makeText(this@AddRecipeActivity, "Error", Toast.LENGTH_SHORT).show()
                 }
             })
         } else {
