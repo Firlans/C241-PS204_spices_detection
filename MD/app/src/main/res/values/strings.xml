@@ -1,54 +1,6 @@
 <resources>
-    <string name="app_name">Herbs</string>
+    <string name="app_name">herbs</string>
+    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="content_tab_home">Welcome Home</string>
-    <string name="content_tab_profile">Change your Profile here</string>
-
-    <string name="tab_text_1">Followers</string>
-    <string name="tab_text_2">Followings</string>
-    <string name="tab_text_3">Setting</string>
-
-    <string name="image_description">Foto Coffe</string>
-    <string name="get_started">Get Started</string>
-    <string name="userNone">Tidak ada akun dengan user tersebut, silahkan cari lagi..</string>
-
-    <string name="rempah_description">Spices image</string>
-    <string name="title_text">Rempah</string>
-    <string name="subtitle_text">Indonesias Invaluable Wealth</string>
-    <string name="login_button">LOGIN</string>
-    <string name="signup_button">SIGN UP</string>
-    <string name="forget_password_text">Forget password?</string>
-
-
-    <string name="dark_mode">Dark Mode</string>
-    <string name="searchbar_hint">Tuliskan Rempahmu</string>
-
-
-    <string name="detail_jahe">
-        1. Mengurangi Reaksi Inflamasi.\n2. Mengendalikan Kadar Gula Darah.\n3. Meredakan Mual.
-    </string>
-    <string name="olahan_jahe">
-Tim Ayam Jahe \n Ayam Goreng Jahe \n Ginger Lemon Honey Tonic \n Lemon Jahe madu \n Minuman Jahe Susu \n
-    </string>
-    <string name="detail_lengkuas">
-        1. Meminimalisir radikal bebas.\n 2. Meningkatkan kesehatan rambut. \n 3. Lengkuas meningkatkan kesuburan pria. \n4. Melindungi dari infeksi.\n 5. Mengatasi radang sendi.
-    </string>
-    <string name="olahan_lengkuas"> Sayur Bayam Lengkuas \n Ayam Goreng Laos \n Tempe Lengkuas \n Cumi Goreng Lengkuas \n Dadar Jagung Bumbu Lengkuas \n
-    </string>
-    <string name="manfaat_kunyit">1. Mengobati Radang. \n 2. Mengatasi Perut yang Kembung. \n 3.Mengurangi Nyeri saat Haid. \n 4. Obat Alergi. \n 5. Menangkal Bakteri Jahat.
-    </string>
-    <string name="olahan_kunyit">Teh Kunyit \n Nasi Goreng Kunyit \n Jamu Kunyit Asam Sirih\n Kunyit Asem Jeruk Peres\n Es Jahe Kunyit Asem
-    </string>
-    <string name="manfaat_kayumanis">1. Menurunkan berat badan. \n2.Baik untuk pengidap diabetes.\n3.Meredakan kram menstruasi.\n4.Meningkatkan kekebalan tubuh.\n5.Mengatasi kista ovarium.
-    </string>
-    <string name="olahan_kayumanis">Wedang Kopi Kayu Manis \n Teh Susu Kayu Manis \nBolu Pisang Kayu Manis \n Bajigur Kayu Manis \n Pisang Goreng Wijen Kayu Manis
-    </string>
-    <string name="manfaat_andaliman">1. Meningkatkan imunitas tubuh \n2. Mendukung kesehatan tulang \n3. Menyembuhkan luka \n4. Mencegah anemia \n5. Mengatasi sakit gigi
-    </string>
-    <string name="olahan_andaliman">Ayam Masak Andaliman\nMie Gomak Saus Andaliman\nSambel Andaliman\nNasi Goreng Andaliman\nNila Andaliman
-    </string>
-    <!--    <string name="manfaat_"></string>-->
-    <!--    <string name="olahan_"></string>-->
-    <!--    <string name="manfaat_"></string>-->
-    <!--    <string name="manfaat_"></string>-->
+    <string name="gambar_resep">gambar resep</string>
 </resources>

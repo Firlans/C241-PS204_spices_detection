@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FAF3EF"
-    tools:context=".ui.sign.LoginActivity">
+    android:background="#FFFFFFFF"
+    tools:context=".auth.LoginActivity">
 
     <!-- Login Container -->
     <LinearLayout
+        android:gravity="center_vertical"
         android:id="@+id/loginContainer"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#F2CCA5"
+        android:background="#FFFFFFFF"
         android:orientation="vertical"
         android:padding="24dp"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,38 +27,40 @@
             android:id="@+id/loginTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/inter_bold"
             android:text="Login"
-            android:textColor="#FFFFFF"
-            android:textSize="24sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:textColor="#FF000000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
 
         <!-- Login Subtitle -->
         <TextView
             android:id="@+id/loginSubtitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="please enter your detail"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:layout_marginBottom="16dp" />
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Please enter your details"
+            android:textColor="#FF000000"
+            android:textSize="14sp" />
 
         <!-- Username/Email Input -->
         <TextView
-            android:id="@+id/usernameLabel"
+            android:id="@+id/tvEmailLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Username\\email"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:layout_marginBottom="4dp" />
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/inter_medium"
+            android:text="Email"
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
 
         <EditText
-            android:id="@+id/usernameInput"
+            android:id="@+id/emailInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edittext"
-
+            android:background="@drawable/bg_grey_rounded"
             android:padding="10dp"
             android:text=""
             android:textColor="#000000"
@@ -65,56 +68,77 @@
 
         <!-- Password Input -->
         <TextView
-            android:id="@+id/passwordLabel"
+            android:id="@+id/tvPasswordLogin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/inter_medium"
             android:text="Password"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
-            android:layout_marginBottom="4dp" />
+            android:textColor="#FF000000"
+            android:textSize="20sp" />
 
+        <!-- Forget Password -->
         <EditText
             android:id="@+id/passwordInput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_edittext"
-            android:padding="10dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/bg_grey_rounded"
             android:inputType="textPassword"
+            android:padding="10dp"
             android:text=""
-            android:textColor="#000000"
-            android:layout_marginBottom="16dp" />
+            android:textColor="#000000" />
 
-        <!-- Forget Password -->
         <TextView
-            android:id="@+id/forgetPassword"
+            android:id="@+id/forgotPassword"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Forget Password"
-            android:textColor="#FFFFFF"
-            android:textSize="14sp"
             android:layout_gravity="end"
-            android:layout_marginBottom="24dp" />
+            android:layout_marginBottom="24dp"
+            android:fontFamily="@font/inter_regular"
+            android:text="Forgot Password"
+            android:textColor="@color/my_dark_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
 
         <!-- Login Button -->
+
+        <!-- Sign Up Prompt -->
         <Button
             android:id="@+id/loginButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/rounded_button"
+            android:layout_marginBottom="24dp"
+            android:backgroundTint="#897433"
             android:text="LOGIN"
-            android:textColor="#FFFFFF"
-            android:textStyle="bold"
-            android:layout_marginBottom="24dp" />
+            android:textColor="#FFFFFFFF"
+            android:textStyle="bold" />
 
-        <!-- Sign Up Prompt -->
-        <TextView
-            android:id="@+id/signupPrompt"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Don’t have account? Sign up"
-            android:textColor="#A59B8F"
-            android:textSize="14sp"
-            android:layout_gravity="center" />
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="Don’t have account? "
+                android:textColor="#FF000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvSignupLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_regular"
+                android:text="Sign up"
+                android:textColor="@color/my_dark_secondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
