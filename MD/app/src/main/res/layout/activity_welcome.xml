@@ -5,85 +5,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFF"
-    android:padding="16dp">
+    tools:context=".auth.WelcomeActivity">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/image_description"
-        android:src="@drawable/rempah"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="228dp"
+        android:layout_height="228dp"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/logo"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/title_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title_text"
-        android:textColor="#8A3C1A"
-        android:textSize="24sp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/inter_bold"
+        android:text="Spiceify"
+        android:textColor="#897433"
+        android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintTop_toBottomOf="@id/imageView"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView" />
 
     <TextView
         android:id="@+id/subtitle_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/subtitle_text"
-        android:textColor="#8A3C1A"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/inter_medium"
+        android:text="Discover the Essence of Flavor"
+        android:textColor="#897433"
         android:textSize="16sp"
-        app:layout_constraintTop_toBottomOf="@id/title_text"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_text" />
 
     <LinearLayout
         android:id="@+id/button_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
         android:orientation="horizontal"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/tvForgotpasswordWelcome"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/subtitle_text">
+        app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/login_button"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="100dp"
+            android:id="@+id/btnLoginWelcome"
+            android:layout_width="0dp"
+            android:layout_marginEnd="4dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
             android:backgroundTint="#8A3C1A"
-            android:text="@string/login_button"
+            android:text="LOGIN"
             android:textColor="#FFFFFF" />
 
         <Button
-            android:id="@+id/signup_button"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="100dp"
+            android:id="@+id/btnSignupWelcome"
+            android:layout_width="0dp"
+            android:layout_marginStart="4dp"
             android:layout_height="wrap_content"
-            android:backgroundTint="#D3B98E"
-            android:text="@string/signup_button"
-            android:textColor="#8A3C1A" />
+            android:layout_weight="1"
+            android:backgroundTint="#897433"
+            android:text="SIGN UP"
+            android:textColor="#FFFFFF" />
     </LinearLayout>
 
     <TextView
-        android:id="@+id/forget_password_text"
+        android:id="@+id/tvForgotpasswordWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/forget_password_text"
-        android:textColor="#8A3C1A"
-        app:layout_constraintTop_toBottomOf="@id/button_layout"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="64dp"
+        android:fontFamily="@font/inter_regular"
+        android:text="Forgot Password?"
+        android:textColor="#897433"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
