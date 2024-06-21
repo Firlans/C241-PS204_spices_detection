@@ -1,4 +1,4 @@
-  # C241-PS204_spices_detection
+  # Capstone Project Bangkit Academy : Spiceify
 
   ## Team ID : C241-PS204
 
