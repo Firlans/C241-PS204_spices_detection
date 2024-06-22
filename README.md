@@ -37,4 +37,4 @@ Current methods of identifying rempah-rempah often rely on visual inspection, le
   </tr>
 </table>
 
-  Aplikasi : [drive](https://drive.google.com/drive/folders/17hBpJyjY38KgIxIw8zfa9VliKcZ8gJNP?usp=drive_link)
+  Aplikasi : [Drive](https://drive.google.com/drive/folders/17hBpJyjY38KgIxIw8zfa9VliKcZ8gJNP?usp=drive_link)
