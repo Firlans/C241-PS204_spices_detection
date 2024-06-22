@@ -3,7 +3,7 @@ package com.example.herbs.main
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.herbs.auth.WelcomeActivity
+import com.example.herbs.MainActivity
 import com.example.herbs.databinding.ActivityEntryBinding
 
 class EntryActivity : AppCompatActivity() {
@@ -15,7 +15,7 @@ class EntryActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.getStartedButton.setOnClickListener {
-            val intent = Intent(this, WelcomeActivity::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
