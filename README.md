@@ -36,3 +36,6 @@ Current methods of identifying rempah-rempah often rely on visual inspection, le
     <td><img src="./display-3.png" alt="Image 3" width="300"></td>
   </tr>
 </table>
+<p>
+  Aplikasi : [drive](https://drive.google.com/drive/folders/17hBpJyjY38KgIxIw8zfa9VliKcZ8gJNP?usp=drive_link)
+</p>
