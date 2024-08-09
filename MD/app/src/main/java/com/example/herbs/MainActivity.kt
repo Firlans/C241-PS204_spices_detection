@@ -25,14 +25,14 @@ class MainActivity : AppCompatActivity() {
         sessionManager = SessionManager(this)
         sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE)
 
-        if (sessionManager.fetchAuthToken().isNullOrEmpty() || !isLoggedIn()) {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-            finish()
-        } else {
-            setCurrentFragment(HomeFragment())
-        }
-
+        //if (sessionManager.fetchAuthToken().isNullOrEmpty() || !isLoggedIn()) {
+        //    val intent = Intent(this, LoginActivity::class.java)
+        //     startActivity(intent)
+        //     finish()
+        // } else {
+        //     setCurrentFragment(HomeFragment())
+        // }
+        setCurrentFragment(HomeFragment())
         binding.bottomNavigationView.setOnItemSelectedListener { item ->
             when (item.itemId) {
                 R.id.home -> setCurrentFragment(HomeFragment())
